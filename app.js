@@ -28,7 +28,7 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 
-var prefixes = [];
+var prefixes = ['packets'];
 
 prefixes.forEach (function (prefix) {
   map.mapRoute (app, prefix);
